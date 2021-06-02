@@ -27,10 +27,18 @@ body {
     border: 1px solid #3a3838;
 }
 
+.white.active {
+    background-color: #dad5c5;
+}
+
 .black {
     --width: 60px;
     background-color: black;
     margin-left: calc(var(--width) / -2);
     margin-right: calc(var(--width) / -2);
     z-index: 3;
+}
+
+.black.active {
+    background-color: #44443f;
 }
