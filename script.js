@@ -11,6 +11,8 @@ keys.forEach(key => {
 
 // Play the piano on the keyboard
 document.addEventListener('keydown', e => {
+    // e.repeat return true if the same key is pressedzc
+    if (e.repeat) return;
     const key = e.key;
     const whiteKeyIndex = WHITE_KEYS.indexOf(key);
     const blackKeyIndex = BLACK_KEYS.indexOf(key);
