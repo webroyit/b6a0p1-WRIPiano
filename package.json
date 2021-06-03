@@ -1,0 +1,25 @@
+{
+  "name": "WRIPiano",
+  "version": "1.0.0",
+  "description": "- User can play the paino by clicking on the paino keys or pressing the keyboard",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webroyit/b6a0p1-WRIPiano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webroyit/b6a0p1-WRIPiano/issues"
+  },
+  "homepage": "https://github.com/webroyit/b6a0p1-WRIPiano#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12"
+  }
+}
