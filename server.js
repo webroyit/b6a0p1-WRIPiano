@@ -35,4 +35,15 @@ app.post('/songs', async (req, res) => {
     res.json(song);
 })
 
+app.get('/songs/:id', async (req, res) => {
+    let song;
+
+    try {
+        song = await Song.findById(req.params.id);
+    } catch (e) {
+        song = undefined;
+    }
+    res.render('index', { song: song });
+})
+
 app.listen(5000);
