@@ -28,6 +28,10 @@ playButton.addEventListener('click', () => {
     playSong();
 })
 
+saveButton.addEventListener('click', () => {
+    saveSong();
+})
+
 // Play the piano on the keyboard
 document.addEventListener('keydown', e => {
     // e.repeat return true if the same key is pressedzc
@@ -101,4 +105,11 @@ function recordNote(note) {
         key: note,
         startTime: Date.now() - recordingStartTime
     })
+}
+
+function saveSong() {
+    axios.post('/songs', { songNotes: songNotes })
+        .then(res => {
+            console.log(res.data);
+        })
 }
